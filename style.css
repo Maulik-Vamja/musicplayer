@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+button{
+    color: antiquewhite;
+    border: none;
+    outline: none;
+}
+.music-content{
+    margin: 0 25px;
+}
+.menu{
+    margin: 15px;
+}
+.search{
+    float: right
+}
+.volume{
+    text-align: center;
+    font-size: 22px;
+}
+.volume input{
+    width:300px;
+    height: 2px !important;
+    border-radius: 10px;
+    background-color:white;
+    outline: none;
+    z-index: 100;
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.music-image{
+    position: relative;
+    width: 100%;
+    height: 215px;
+}
+.circle-image{
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 300px;
+    height:300px;
+    background-color: black;
+    border-radius:50%;
+    border: 5px solid rgba(221, 211, 221, 0897);
+    overflow: hidden;
+}
+.music-image img{
+    width: 100%;
+    height: 100%;
+}
+#music-title{
+    position: relative;
+    padding: 0 25px;
+    top: 26%;
+}
+#music-title h5{
+    font-size: 20px;
+    margin: 20px 0 5px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2;
+}
+#music-title h6{
+    margin:0;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 400;
+}
+.music-menu{
+    width: 90%;
+    height: 40px;
+    position: relative;
+    top: -90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.music-menu button{
+    font-size: 23px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    transition: 0.5s;
+}
+.music-menu button:hover{
+    font-size: 25px;
+    height:55px;
+    width: 55px;
+    transition: 0.5s;
+}
+#time{
+    position: relative;
+    padding: 0 12px 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.seekslider{
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 70px;
+    margin-top: 10px;
+    scroll-behavior: smooth;
+}
+
+#buttons{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+#buttons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    width: 80px;
+    height:80px;
+    margin: 0 40px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.play:hover{
+opacity: 0.4;
+transition: 0.8s;
+}
+.play i{
+    color: black;
+    font-size: 40px;
+    padding-left:4px;
+}
+.prev{
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    background-color: transparent;
+    font-size: 40px;
+    padding-right:14px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.next{
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    font-size: 40px;
+    background-color: transparent;
+    padding-left:14px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.prev:hover,.next:hover{
+    border-radius: 50%;
+    background-color: rgba(255 ,255,255, 0.345);
+    transition: 0.4s;
+}
+#buttons .like{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#buttons .repeat{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.like:hover{
+    font-size: 25px;
+    transition: 0.5s;
+}

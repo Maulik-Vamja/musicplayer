@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="music-content">
+        <div class="menu">
+            <span class="list-toggle"><i class="fa fa-align-left" aria-hidden="true"></i></span>
+            <span class="search"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div class="volume">
+                <span class="volume-down"><i class="fa fa-volume-down" aria-hidden="true"></i></span>
+                <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+                <span class="volume-up"><i class="fa fa-volume-up" aria-hidden="true"></i></span>
+        </div>
+        <div class="music-image">
+            <div class="circle-image">
+                <img src="images/ncs1.jpeg" alt="music-image" id="image">
+            </div>
+            <div id="music-title">
+                <h5 id="playlist_status"></h5>
+                <h6 id="playlist_artist"></h6>
+            </div>
+            <div class="music-menu">
+                <button id="random"><i class="fa fa-random" aria-hidden="true"></i></button>
+                <button id="mutebtn" title="Mute"><i id="mute" class="fa fa-volume-off" aria-hidden="true"></i></button>
+            </div>
+            <div id="time">
+                <span id="curtimetext">00:00</span>
+                <span id="durtimetext">00:00</span>
+            </div>
+            <input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0" step="1">
+            <div id="buttons">
+                <span class="repeat" id="repeat"><i id="repeaticon" class="fa fa-repeat" aria-hidden="true"></i></span>
+                <div>
+                    <button class="prev" id="prevbtn"><i class="fa fa-backward" aria-hidden="true"></i></button>
+                    <button class="play" id="playpausebtn"><i id="playpauseicon" class="fa fa-play" aria-hidden="true"></i></button>
+                    <button class="next" id="nextbtn"><i class="fa fa-forward" aria-hidden="true"></i></button>
+                </div>
+                <span class="like" ><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
